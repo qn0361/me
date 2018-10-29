@@ -1,0 +1,33 @@
+// COLORS
+$pclr: #f0c958
+$aclr: #7dc6fd
+
+
+$b-main: #333
+$b-sec: #555
+$b-dis: #999
+$b-div: #e1e8ed
+
+$snclr-1: #ededed
+$snclr-2: #efefef
+
+$err-clr: #ce423b
+$scs-clr: #3bce56
+
+// GRADIENTS
+=text-protection($color)
+	+background-image(linear-gradient(to top, rgba($color, 0.3) 0%, rgba($color, 0.15) 35%, rgba($color, 0) 100%))
+
+
+// RESPONSIVE BREAKPOINTS
+$md: 992px
+$sm: 768px
+$xs: 512px
+
+$gtmd: "screen and (min-width:"+$md+")"
+$gtsm: "screen and (min-width:"+$sm+")"
+$gtxs: "screen and (min-width:"+$xs+")"
+
+$ltmd: "screen and (max-width:"+$md+")"
+$ltsm: "screen and (max-width:"+$sm+")"
+$ltxs: "screen and (max-width:"+$xs+")"

@@ -1,0 +1,35 @@
+$thumbnail_gap: 12px
+
+.m-thumbnail
+	margin-bottom: 36px
+	&:last-child
+		margin-bottom: 0
+.m-thumbnail__title
+	margin-bottom: $thumbnail_gap
+.m-thumbnail__summary
+	color: $b-sec
+	font-size: 14px
+	list-style: none
+	padding-left: 0
+	margin: $thumbnail_gap 0
+	> li
+		display: inline-block
+		&:after
+			content: '|'
+			color: $b-div
+			margin: 0px 4px
+		&:last-child
+			&:after
+				content: normal	
+
+.m-thumbnail__desc
+	font-weight: 400
+	color: $b-sec
+
+.m-thumbnail--hero
+	.m-thumbnail__title
+		margin-bottom: 6px
+	.m-thumbnail__summary
+		margin-bottom: 12px
+	.m-thumbnail__desc
+		margin-bottom: 12px
